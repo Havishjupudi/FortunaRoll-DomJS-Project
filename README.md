@@ -116,6 +116,6 @@ Name: Havish Jupudi
 
 Email: havish.jupudi@gmail.com
 
-**Havish Jupudi** - [GitHub](https://github.com/Havishjupudi)]
+**Havish Jupudi** - [GitHub](https://github.com/Havishjupudi)
 
 ---
