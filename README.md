@@ -113,7 +113,9 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 If you have any questions, feedback, or suggestions, please feel free to reach out to:
 
 Name: Havish Jupudi
+
 Email: havish.jupudi@gmail.com
+
 **Havish Jupudi** - [GitHub](https://github.com/Havishjupudi)]
 
 ---
