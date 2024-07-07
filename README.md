@@ -5,6 +5,11 @@
 
 FortunaRoll is a simple dice game where two players compete to reach 100 points first.
 
+## Live Host
+
+Check out the live version of FortunaRoll: The Dice Game website: [FortunaRoll: The Dice Game
+ Live Site](https://havishjupudi.github.io/FortunaRoll-DomJS-Project/)
+
 ## Features
 
 - **Roll Dice**: Click the **Roll Dice** button to roll a dice and accumulate points.
@@ -103,6 +108,7 @@ Ensure you have a modern web browser installed.
 
 ## Working Demo
 
+https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/assets/147229053/227c1368-f0b5-4bc7-b7b0-b97262a0defa
 
 ## Contributing
 
