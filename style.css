@@ -132,13 +132,13 @@ p {
   padding: 1rem 3rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
 }
 
-.btn::first-letter {
-  font-size: 2.4rem;
-  display: inline-block;
-  margin-right: 0.7rem;
+.btn:hover {
+  background-color: #ccac00;
 }
+
 
 .btn--new {
   top: 2rem;
