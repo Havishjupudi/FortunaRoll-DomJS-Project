@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FortunaRoll: The Dice Game</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="imgs/logo.png" alt="">
+    </header>
+  <div class="instruction-btn">
+    <img src="imgs/instructions.png" alt="Instructions">
+    <!-- <span class="tooltip">Instructions</span> -->
+  </div>
+  <button class="btn btn--new">🔄 New game</button>
+    <main class="winner-pops ">
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1 ">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-imgs/dice-5.png" alt="Playing dice" class="dice" />
+      <!-- <button class="btn btn--new">🔄 New game</button> -->
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <div class="winner-pop player--0 hidden">
+      <p>WINNER!</p>
+      <p>PLAYER 1</p>
+    </div>
+    <div class="winner-pop player--1 hidden">
+      <p>WINNER!</p>
+      <p>PLAYER 2</p>
+    </div>
+    <div class="modal">
+      <button class="close-modal">&times;</button>
+      <h1>FortunaRoll: The Dice Game Instructions </h1>
+      <h3>Objective:</h3>
+      <p>Be the first player to reach <strong>100 points</strong>!</p>
+
+      <h3>Game Setup:</h3>
+      <ul>
+          <li>The game is played by two players.</li>
+          <li>Each player starts with a score of 0.</li>
+          <li>Player 1 begins the game.</li>
+      </ul>
+
+      <h3>How to Play:</h3>
+      <ul>
+          <li><strong>Roll the Dice:</strong> On your turn, click the "Roll Dice" button to roll a dice.
+              <ul>
+                  <li>If you roll a number between 2 and 6, that number is added to your <strong>current score</strong>.</li>
+                  <li>If you roll a 1, your turn ends, and your <strong>current score</strong> resets to 0. The other player then takes their turn.</li>
+              </ul>
+          </li>
+          <li><strong>Hold:</strong> At any time during your turn, you can choose to "Hold".
+              <ul>
+                  <li>This will add your <strong>current score</strong> to your <strong>total score</strong>, and it becomes the other player's turn.</li>
+                  <li>If your <strong>total score</strong> reaches or exceeds 100, you win the game!</li>
+              </ul>
+          </li>
+      </ul>
+
+      <h3>Additional Rules:</h3>
+      <ul>
+          <li>Players take turns to roll the dice and accumulate points.</li>
+          <li>If a player rolls a 1, they lose all points accumulated in their <strong>current score</strong> for that turn and their turn ends.</li>
+          <li>The first player to reach a <strong>total score</strong> of 100 or more points wins the game.</li>
+          <li>Click the "New Game" button to reset the game and start over.</li>
+      </ul>
+
+      <h3>Winning the Game:</h3>
+      <ul>
+          <li>The game ends immediately when a player’s <strong>total score</strong> reaches or exceeds 100.</li>
+          <li>The winning player is declared and the game resets for a new round.</li>
+      </ul>
+
+      <p>Good luck and have fun!</p>
+      </p>
+    </div>
+    <div class="overlay"></div>
+    <footer>
+      <span>~by Havish Jupudi</span>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1/dist/confetti.browser.min.js"></script>
+  </body>
+</html>

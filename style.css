@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  background-image: linear-gradient(to top left, #1c1c1c, #4a4a4a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYOUT */
+main {
+  position: relative;
+  width: 90rem;
+  height: 55rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.player {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+  color: #fff;
+}
+
+/* ELEMENTS */
+.name {
+  position: relative;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-weight: 300;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.score {
+  font-size: 7rem;
+  font-weight: 300;
+  margin-bottom: auto;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #ffd700;
+}
+
+.player--active .name {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: #ffd700;
+  opacity: 0.9;
+  border-radius: 10px;
+  color: #333;
+  width: 65%;
+  padding: 1.5rem;
+  margin-bottom: 140px;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #222;
+}
+
+.current-score {
+  font-size: 3rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #333;
+  background: #ffd700;
+  border: none;
+  font-family: inherit;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+  padding: 1rem 3rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--new {
+  top: 2rem;
+}
+
+.btn--roll {
+  top: 41rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--hold {
+  top: 48rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 12rem;
+  transform: translateX(-50%);
+  height: 12rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: #444;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.player--winner .score {
+  font-weight: 700;
+  color: #ffd700;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  background-color: #2a2a2a;
+  padding: 4rem;
+  border-radius: 15px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  overflow-y: auto;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.modal h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #ffd700;
+}
+
+.modal h3 {
+  margin-top: 2rem;
+  color: #ffd700;
+}
+
+.modal ul {
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.modal p {
+  margin-top: 1rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #ffd700;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 1000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  z-index: 5;
+}
+
+.instruction-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd700;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.instruction-btn img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+
+.instruction-btn:hover .tooltip {
+  display: block;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+}
+
+.winner-pop {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 47%;
+  text-align: center;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  background-color: #ffd700;
+  padding: 1rem;
+  box-sizing: border-box;
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    top: -100%;
+    opacity: 0;
+  }
+  100% {
+    top: 43%;
+    opacity: 1;
+  }
+}
+
+.winner-pop p {
+  font-size: 4rem;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.btn--new {
+  position: absolute;
+  z-index: 4;
+  top: 22%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 2rem;
+  font-size: 1.6rem;
+  z-index: 10000;
+}
+
+.logo {
+  width: auto;
+  height: 12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+@media (max-width: 48.5em) {
+  html {
+      font-size: 42%;
+  }
+
+  .dice {
+    height: 6rem;
+  }
+}
